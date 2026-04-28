@@ -15,7 +15,7 @@ function loadScript(src: string): void {
 }
 
 const SOCIAL_OPTIONS = ["Instagram", "Facebook", "Youtube", "Moj", "Tiktok"] as const;
-const FOLLOWER_BUCKETS = ["Less than 10k", "10k – 50k", "50k – 100k", "100k – 1M"] as const;
+const FOLLOWER_BUCKETS = ["Less than 10k", "10k – 50k", "50k – 100k", "100k – 1M","more than 1M"] as const;
 const NICHE_OPTIONS = [
   "Fashion",
   "Food",
@@ -29,7 +29,7 @@ const NICHE_OPTIONS = [
   "Couple Content",
   "Family / Parenting",
 ] as const;
-const OTHER_PROFILE_OPTIONS = ["-None-", "Instagram", "Youtube", "Facebook", "Moj", "Tiktoh"] as const;
+const OTHER_PROFILE_OPTIONS = ["-None-", "Instagram", "Youtube", "Facebook", "Moj", "Tiktok"] as const;
 
 const schema = z.object({
   fullName: z.string().trim().min(2, "Enter your full name"),
